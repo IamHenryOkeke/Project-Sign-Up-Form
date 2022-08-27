@@ -1,0 +1,25 @@
+@font-face {
+    font-family: my-norse-font;
+    src: url(../fonts/Norse-Bold.otf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+#logo{
+    background:url(../images/pawel-czerwinski-Tyg0rVhOTrE-unsplash.jpg) no-repeat center center;
+    font-family: my-norse-font, sans-serif;
+    width: 35%;
+}
+
+#form-body{
+    margin: 100px auto;
+}

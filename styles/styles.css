@@ -9,28 +9,33 @@
     box-sizing: border-box;
 }
 body{
-    display: flex;
     width: 100vw;
     height: 100vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.container{
+    display: flex;
+}
+
 #logo{
     background:url(../images/halie-west-25xggax4bSA-unsplash.jpg) no-repeat center center;
     background-position: center;
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 40vw;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 80px;
 }
 
 
-#logo-item1{
+#logo-item{
     background-color: rgba(0, 0, 0, 0.4);
     width: 40vw;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,14 +44,7 @@ body{
     top: 100px;
     font-family: my-norse-font, sans-serif;
     color: white;
-}
-
-#logo-item2{
-    position: absolute;
-    bottom: 50px;
-    left: 30%;
-    color: white;
-    font-size: 18px;
+    
 }
 
 #logo-item2 > div > a{
@@ -82,24 +80,9 @@ body{
     gap: 20px;
 }
 
-#name-section{
+#name-section, #mail-phone-section,#password-section{
     display: flex;
     gap: 50px;
-}
-
-#mail-phone-section{
-    display: flex;
-    gap: 50px;
-}
-
-#password-section{
-    display: flex;
-    gap: 50px;
-}
-#item{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
 }
 
 
@@ -171,4 +154,44 @@ font-size: 20px;
 a{
     text-decoration: none;
     color: #596D48;
+}
+
+@media only screen and (max-width: 600px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    #logo{
+        width: 100vw;
+        font-size: 50px;
+        height: 250px;
+    }
+    
+    #logo-item{
+        background-color: rgba(0, 0, 0, 0.4);
+        height: 150px;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #form{
+        width: 100vw;
+    }
+    #name-section, #mail-phone-section,#password-section{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center;
+        align-items: center; */
+    }
+    #form-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  
+        padding: 50px;
+    
+    }
 }

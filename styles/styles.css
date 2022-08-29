@@ -88,8 +88,8 @@ body{
 
 
 p{
-    font-size: 2.3rem;
-    font-weight: 550;
+    font-size: 2rem;
+    font-weight: 450;
 }
 
 button{
@@ -192,6 +192,10 @@ a{
         align-items: center;
   
         padding: 50px;
-    
+    }
+    p{
+        font-size: 1.5rem;
+        font-weight: 450;
+        text-align: center;
     }
 }

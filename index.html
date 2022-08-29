@@ -8,20 +8,23 @@
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    <div id="container">
         <div id="logo">
-            <div id="odin-image">
-                <img src="./images/odin-lined.png" alt="">
+            <div id="logo1">
+                <div id="odin-image">
+                    <img src="./images/odin-lined.png" alt="">
+                </div>
+                <div id="odin-logo">
+                    ODIN
+                </div>
             </div>
-            <div id="odin-logo">
-                ODIN
-            </div>
-            <div>
-                Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/25xggax4bSA">Unsplash</a>
+            <div id="logo2">
+                <div>
+                    Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/25xggax4bSA">Unsplash</a>
+                </div>
             </div>
         </div>
-        <div id="form-body">
-            <div id="form-item1">
+        <div id="form">
+            <div id="form-head">
                 <p>
                     This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
                     Sign up now to get started.
@@ -30,16 +33,80 @@
                     You <em>know</em> you want to.
                 </p>
             </div>
-            <div id="form-item2">
-                <h1>
-                    Let's do this!
-                </h1>
-                <form action="#" method="post">
-                    
+            <div id="form-body">
+                <div id="form-item1">
+                    <p>
+                        Let's do this!
+                    </p>
+                </div>
+                <form id="form-item2" action="#" method="post">
+                   <div id="name-section">
+                        <div id="item">
+                            <label for="first-name">
+                                FIRST NAME
+                            </label>
+                            <div>
+                                <input type="text" id="first-name" required>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div id="item">
+                            <label for="last-name">
+                                LAST NAME
+                            </label>
+                            <div>
+                                <input type="text" id="last-name" required>
+                                <span></span>
+                            </div>
+                        </div>
+                   </div>
+                   <div id="mail-phone-section">
+                        <div id="item">
+                            <label for="email">
+                                EMAIL
+                            </label>
+                            <div>
+                                <input type="email" id="email" required>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div id="item">
+                            <label for="phone">
+                                PHONE NUMBER
+                            </label>
+                            <div>
+                                <input type="text" id="phone" required>
+                                <span></span>
+                            </div>
+                        </div>
+                   </div>
+                   <div id="password-section">
+                        <div id="item">
+                            <label for="password">
+                                PASSWORD
+                            </label>
+                            <div>
+                                <input type="password" id="password" required>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div id="item">
+                            <label for="confirm-password">
+                                CONFIRM PASSWORD
+                            </label>
+                            <div>
+                                <input type="password" id="confirm-password" required>
+                                <span></span>
+                            </div>
+                        </div>
+                   </div> 
+                   <div  id="form-bottom">
+                        <button>Create Account</button>
+                   </div>
                 </form>
             </div>
-            <div id="form-item3">
-                <button>Create Account</button>
+            <div>
+                
                 <p>
                     Already have an account?
                     <a href="http://">Log in</a>
@@ -47,6 +114,5 @@
             </div>
             
         </div>
-    </div>
 </body>
 </html>

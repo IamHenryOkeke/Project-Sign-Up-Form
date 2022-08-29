@@ -17,44 +17,64 @@ body{
 
 #logo{
     background:url(../images/halie-west-25xggax4bSA-unsplash.jpg) no-repeat center center;
-    width: 40%;
-    height: 100vh;
-
-}
-
-#logo1{
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 40vw;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+#logo-item1{
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+    top: 100px;
     font-family: my-norse-font, sans-serif;
+    color: white;
 }
 
-#logo2{
+#logo-item2{
     position: absolute;
-    bottom: 0;
-}
-#form{
-    width: 60%;
-    background-color: rgb(247, 240, 240);
-    padding: 40px 80px;
+    bottom: 50px;
+    left: 30%;
+    color: white;
+    font-size: 18px;
 }
 
-/* #form-head{
-    
-} */
+#logo-item2 > div > a{
+    color: white;
+}
+
+#form{
+    width: 60vw;
+}
+
+#form-head{
+    background-color: rgb(247, 240, 240);
+    padding: 50px;
+}
 
 
 #form-body{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin: 50px 0;
-}
-/* 
-#form-bottom{
-   
+    padding: 50px;
 
-} */
+}
+
+#form-bottom{
+    background-color: rgb(247, 240, 240);
+    padding: 40px 50px;
+}
 
 #form-item2{
     display: flex;
@@ -82,12 +102,15 @@ body{
     gap: 5px;
 }
 
+
+
 p{
     font-size: 2.3rem;
     font-weight: 550;
 }
 
 button{
+    width: fit-content;
     background-color: #596D48;
     padding: 20px 40px;
     color: white;
@@ -98,26 +121,6 @@ button{
     
 }
 
-/* input{
-    width: 300px;
-    height: 40px;
-    font-size: x-large;
-    padding-left: 5px;
-    border-radius: 10px;
-    border: 3px solid rgb(209, 199, 195); 
-}
-
-input:focus{
-    background-color: darkgray;
-}
-
-input::valid{
-    border: 3px solid green;
-}
-
-input::invalid{
-    border: 3px solid red;
-} */
 
 input{
     width: 300px;
@@ -130,7 +133,7 @@ input{
 
 input:focus{
     border-color: blue;
-    box-shadow: 5px;
+    box-shadow: 0 0 2px #665df5;
     background-color: rgb(228, 222, 222);
 }
   
@@ -145,4 +148,27 @@ input:valid + span::before {
 content: ' ✓';
 color: green;
 font-size: 20px;
+}
+
+.triangle-left {
+    display: inline;
+	width: 0;
+	height: 0;
+	border-top: 30px solid transparent;
+	border-left: 30px solid #555;
+	border-bottom: 30px solid transparent;
+}
+
+.triangle-right {
+    display: inline;
+	width: 0;
+	height: 0;
+	border-top: 30px solid transparent;
+	border-right: 30px solid rgb(76, 238, 76);
+	border-bottom: 30px solid transparent;
+}
+
+a{
+    text-decoration: none;
+    color: #596D48;
 }

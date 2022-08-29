@@ -8,18 +8,141 @@
     padding: 0px;
     box-sizing: border-box;
 }
-#container{
+body{
     display: flex;
     width: 100vw;
     height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #logo{
     background:url(../images/halie-west-25xggax4bSA-unsplash.jpg) no-repeat center center;
-    font-family: my-norse-font, sans-serif;
-    width: 35%;
+    width: 40%;
+    height: 100vh;
+
 }
 
+#logo1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: my-norse-font, sans-serif;
+}
+
+#logo2{
+    position: absolute;
+    bottom: 0;
+}
+#form{
+    width: 60%;
+    background-color: rgb(247, 240, 240);
+    padding: 40px 80px;
+}
+
+/* #form-head{
+    
+} */
+
+
 #form-body{
-    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 50px 0;
+}
+/* 
+#form-bottom{
+   
+
+} */
+
+#form-item2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#name-section{
+    display: flex;
+    gap: 50px;
+}
+
+#mail-phone-section{
+    display: flex;
+    gap: 50px;
+}
+
+#password-section{
+    display: flex;
+    gap: 50px;
+}
+#item{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+p{
+    font-size: 2.3rem;
+    font-weight: 550;
+}
+
+button{
+    background-color: #596D48;
+    padding: 20px 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+/* input{
+    width: 300px;
+    height: 40px;
+    font-size: x-large;
+    padding-left: 5px;
+    border-radius: 10px;
+    border: 3px solid rgb(209, 199, 195); 
+}
+
+input:focus{
+    background-color: darkgray;
+}
+
+input::valid{
+    border: 3px solid green;
+}
+
+input::invalid{
+    border: 3px solid red;
+} */
+
+input{
+    width: 300px;
+    height: 40px;
+    font-size: x-large;
+    padding-left: 5px;
+    border-radius: 10px;
+    border: 5px solid #E5E7EB;
+}
+
+input:focus{
+    border-color: blue;
+    box-shadow: 5px;
+    background-color: rgb(228, 222, 222);
+}
+  
+input:invalid + span::before {
+content: '✖';
+color: red;
+font-size: 20px;
+
+}
+
+input:valid + span::before {
+content: ' ✓';
+color: green;
+font-size: 20px;
 }

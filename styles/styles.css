@@ -85,8 +85,6 @@ body{
     gap: 50px;
 }
 
-
-
 p{
     font-size: 2rem;
     font-weight: 450;
@@ -197,5 +195,12 @@ a{
         font-size: 1.5rem;
         font-weight: 450;
         text-align: center;
+    }
+    input{
+        width: 250px;
+    }
+    #button{
+        display: flex;
+        justify-content: center;
     }
 }
